@@ -233,7 +233,7 @@ h2 {
 
     background-image: url("assets/artwork1.webp");
     background-position: center;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 
     filter:
@@ -463,7 +463,7 @@ hr {
 
     background-image: url("assets/artwork2.png");
     background-position: center;
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
 
     filter:
