@@ -942,10 +942,16 @@ hr {
    CREDITS PAGE
 ========================= */
 
+/* Main credits header */
+
 .credits-hero {
     max-width: 780px;
 
-    margin: 40px auto 90px;
+    margin: 40px auto 80px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -953,36 +959,51 @@ hr {
     width: 480px;
     max-width: 85%;
 
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 
 
 .credits-tagline {
+    max-width: 640px;
+
+    margin: 0;
+
     font-size: 22px;
 
     color: #eee;
-
-    margin: 0 auto;
-
-    max-width: 640px;
 }
 
 
+/* Shared section titles */
+
+.credits-team h2,
+.credits-additional h2,
+.credits-beta h2 {
+    font-size: 32px;
+
+    margin: 0 0 28px;
+
+    color: #ffff00;
+}
+
+
+/* =========================
+   PROJECT LEAD
+========================= */
+
 .credits-team {
+    width: 100%;
     max-width: 780px;
 
-    margin: 0 auto 55px;
-
-    display: flex;
-    flex-direction: column;
-
-    gap: 24px;
+    margin: 0 auto 70px;
 }
 
 
 .credit-card {
     display: flex;
     align-items: center;
+
+    width: 100%;
 
     gap: 24px;
 
@@ -1009,6 +1030,11 @@ hr {
     flex-shrink: 0;
 
     background: #111;
+}
+
+
+.credit-info {
+    min-width: 0;
 }
 
 
@@ -1059,17 +1085,35 @@ hr {
 }
 
 
-.credits-beta {
+/* =========================
+   ADDITIONAL CONTRIBUTORS
+========================= */
+
+.credits-additional {
+    width: 100%;
     max-width: 780px;
 
-    margin: 0 auto 60px;
+    margin: 0 auto 70px;
 }
 
 
-.credits-beta h2 {
-    font-size: 32px;
+.additional-grid {
+    display: flex;
+    flex-direction: column;
 
-    margin-bottom: 30px;
+    gap: 20px;
+}
+
+
+/* =========================
+   BETA TESTERS
+========================= */
+
+.credits-beta {
+    width: 100%;
+    max-width: 780px;
+
+    margin: 0 auto 70px;
 }
 
 
@@ -1321,8 +1365,15 @@ footer p {
     }
 
 
+    .credits-hero {
+        margin: 25px auto 55px;
+    }
+
+
     .credits-logo {
         width: 380px;
+
+        margin-bottom: 24px;
     }
 
 
@@ -1331,10 +1382,43 @@ footer p {
     }
 
 
+    .credits-team,
+    .credits-additional,
+    .credits-beta {
+        margin-bottom: 55px;
+    }
+
+
+    .credits-team h2,
+    .credits-additional h2,
+    .credits-beta h2 {
+        font-size: 27px;
+
+        margin-bottom: 24px;
+    }
+
+
     .credit-card {
         flex-direction: column;
 
         text-align: center;
+
+        padding: 22px 18px;
+    }
+
+
+    .credit-info {
+        width: 100%;
+    }
+
+
+    .credit-info h3 {
+        font-size: 21px;
+    }
+
+
+    .credit-info p {
+        font-size: 16px;
     }
 
 
@@ -1347,6 +1431,14 @@ footer p {
         flex-direction: row;
 
         text-align: left;
+
+        padding: 18px;
+    }
+
+
+    .beta-card .credit-avatar {
+        width: 60px;
+        height: 60px;
     }
 
 }
